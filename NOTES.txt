@@ -19,18 +19,25 @@ Script Locations
 2. In an element (usually within <head></head> or at the bottom)
 3. Separate document
 
+
 Syntax
 ----------------
 <script language="javascript" type="text/javascript">
-// language is deprecated in HTML5
-// type preferred
+    // language is deprecated in HTML5
+    // type preferred
 
-Rules:
 - Case-Sensitive (like Python)
 - Comments: (like Java, HTML)
     - Single line: <!-- OR //
     - Multi-line:    /* ... */
 - Semi-colons between statements (like Java)
+- var x,y;  // without 'var' scope defaults to global
+- &&, ||, !   OR   &, |, ^, ~, <<, >>, >>> for bit-wise
+- =, +=, ++, etc.
+- Ternary: -- (A>B) ? A : B;  
+- typeof()
+
+
 CSS
 --------------
 p{font-color: red; font-family:Arial}
