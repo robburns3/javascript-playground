@@ -1,13 +1,24 @@
 <!DOCTYPE html>
 <html>
-<body>
-<h1>Title</h1>
-<p>A paragraph of
-text</p>
-<script language="javascript" type="text/javascript">
-<!--
-document.write("First test")
-//-->
-</script>
+<head>
+<title>Hello, HTML!</title>
+<script>
+    function countToThree() {
+        var count = 0;
+        while (count < 3) {
+            count++;
+            document.getElementById("theCount").innerHTML += count + "<br>";
+        }
+    } </script>
+</head>
+<body onload="countToThree();">
+    <h1>Counting to Three</h1>
+    <p id="theCount">A paragraph of
+    text</br></p>
+    <script language="javascript" type="text/javascript">
+        <!--
+        document.write("DOM edit")
+        //-->
+    </script>
 </body>
 </html>

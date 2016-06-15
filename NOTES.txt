@@ -1,0 +1,36 @@
+JavaScript Notes
+================
+
+JQuery Syntax:
+$("selector").method();
+
+OBJECT          DOCUMENT                        EXAMPLE
+element         <p></p>                         $('p').css('font-size','12')
+.class          <p class="redtext"></p>         $('redtext').css
+#Id             <p id="intro"></p>              $('#intro').fadeIn('slow')
+[attribute]     <p data-role="content"></p>     $('[data-role]').show()
+
+.attr() - access to attribute values
+$('#intro').attr('href') = "www.abc.com";
+
+Script Locations
+----------------
+1. As an attribute with event: onload, onfocus, etc.
+2. In an element (usually within <head></head> or at the bottom)
+3. Separate document
+
+Syntax
+----------------
+<script language="javascript" type="text/javascript">
+// language is deprecated in HTML5
+// type preferred
+
+Rules:
+- Case-Sensitive (like Python)
+- Comments: (like Java, HTML)
+    - Single line: <!-- OR //
+    - Multi-line:    /* ... */
+- Semi-colons between statements (like Java)
+CSS
+--------------
+p{font-color: red; font-family:Arial}
