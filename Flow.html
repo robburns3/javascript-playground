@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <body>
+    <script type="text/javascript">
+        <!--
+        function conditional(x, y) {
+            if (x>y) {
+                // do something
+            } else if (x==y) {            
+                // do something
+            } else {
+                document.write("less<br>");
+            }
+        }
+        
+        function switchStatement(x) {
+            switch (x) {
+                case 0: document.write("0<br>");
+                    break;
+                case 1: document.write("1<br>");
+                    break;
+                default: document.write("other<br>");
+            }
+        }
+        
+        function whileAndDoLoops(x) {
+            // While Loop
+            while (x <= 3) {
+                document.write(x++ + " while<br>");
+            }
+            do {
+                document.write(x-- + " do while<br>")
+            } while (x > 1);
+        }
+        
+        function forLoops() {
+            // For Loop
+            for (var i=0; i<3; i++) {
+                document.write(i + " for<br>");
+            }
+            var c = "cat";
+            for (letter in c) {
+                document.write(c[letter] + " cat<br>");
+            }
+        }
+        
+        var x = 1;
+        var y = 2;        
+        conditional(x,y);
+        switchStatement(x);
+        whileAndDoLoops(x);
+        forLoops();
+        
+        //-->
+    </script>
+    </body>
+</html>

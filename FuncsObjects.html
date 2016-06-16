@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <script type="text/javascript">
+        function print(str) { document.write(str + "<br>"); }
+        // -------------
+        // Functions
+        // -------------
+        var greaterThan5 = function(x) {
+            return x > 5;
+        }
+        function lessThan5(x) {
+            return x < 5;
+        }
+        // Function object
+        var equals5 = new Function('x', 'return x == 5');
+        
+        print(greaterThan5(3));
+        print(greaterThan5(6));
+        print(lessThan5(3));
+        print(lessThan5(6));
+        print(equals5(5));
+        
+        // -------------
+        // Objects
+        // -------------
+        // Derived from 'object' object
+        var car = {
+            numWheels: 2,
+            isMotorcycle: function() {
+                return this.numWheels == 2;
+            }
+        }
+        print("motorcycle:" + car.isMotorcycle());
+        // Define later
+        car.color = "silver";
+        
+        // Constructor (less preferred)
+        var animal = Object();
+        animal.kind = "dog";
+        animal.age = 3;
+        print("animal:" + animal.kind);
+      
+        // -------------
+        // Strings
+        // -------------
+        var s1 = "blue";
+        var s2 = new String("green");
+        print(s1.charAt(0));
+        print(s2.indexOf("e"));
+        // Regex: match(), search(), replace()
+        print(s2.replace(/ee/gi, "oa"));
+        print(s1.toUpperCase());
+        print(s1.concat(s2, "red"));
+
+        // -------------
+        // Dates
+        // -------------
+        var d1 = new Date(1,0,1);
+        print(d1);
+        var d1 = new Date("Mar 15 1999 8:00 UTC");
+        print(d1.getUTCHours());
+    </script>
+</body>
+</html>
