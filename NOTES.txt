@@ -37,6 +37,18 @@ Syntax
 - Ternary: -- (A>B) ? A : B;  
 - typeof()
 
+Flow:
+    if ( ) {
+    } else if ( ) {
+    } else {
+    }
+
+    switch ( ) {
+        case 0: ;
+            break;
+        default:
+            // break;
+    }
 
 CSS
 --------------

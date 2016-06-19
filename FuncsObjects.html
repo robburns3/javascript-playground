@@ -60,6 +60,35 @@
         print(d1);
         var d1 = new Date("Mar 15 1999 8:00 UTC");
         print(d1.getUTCHours());
+        
+        // -------------
+        // Math
+        // -------------
+        print("Math");
+        var a = Math.abs(-5);
+        print(a);
+        var a = Math.max(1,4,3);
+        print(a);
+
+        // -------------
+        // Arrays
+        // -------------
+        print("Arrays");
+        // Array object
+        var colors = new Array("red", "yellow", "blue");
+        print(colors);
+        // Indirectly
+        var more = ["orange", "purple", "green"];
+        print(more);
+        // Assignment
+        colors[3] = "turquoise";
+        // populates elements in between with empty elements
+        colors[7] = "gold";
+        print(colors);
+        print("Total colors: " + colors.length);
+        print(colors.indexOf("blue"));
+        colors = colors.join(" + ");  
+        print("Join: " + colors);
     </script>
 </body>
 </html>
