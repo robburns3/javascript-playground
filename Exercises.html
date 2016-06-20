@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript">
+        // Exercise #1 -- date
+        var daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        var now = new Date();
+        document.write("Today is: " + daysOfWeek[now.getDay()] + "<br>");
+        var time = now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds(); 
+        document.write("Current time is: " + time + "<br>");
+        
+        // Exercise #2 -- reverse number
+        var num = 456;
+        num = num.toString();
+        var rev = '';
+        for (var i=num.length-1; i>=0; i--) {
+            rev += num[i];
+        }
+        document.write(rev + "<br>");
+        
+        // Exercise #3 -- max of 2 numbers
+        var num1 = window.prompt("Enter number 1");
+        var num2 = window.prompt("Enter number 2");
+        alert("Largest number is: " + Math.max(num1, num2));
+
+    </script>
+</head>
+</html>
