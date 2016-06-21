@@ -17,12 +17,46 @@
             rev += num[i];
         }
         document.write(rev + "<br>");
-        
+ 
         // Exercise #3 -- max of 2 numbers
-        var num1 = window.prompt("Enter number 1");
+        /*var num1 = window.prompt("Enter number 1");
         var num2 = window.prompt("Enter number 2");
         alert("Largest number is: " + Math.max(num1, num2));
-
+*/
+        // Exercise #4 -- lists
+        document.write("fruit<br>");
+        var fruits = ["Apples", "Oranges", "Grapes", "Pears", "Berries", "Peaches", "Bananas"];
+        var suffix = ["th", "st", "nd", "rd"];
+        function getSuffix(num) {
+            if (num > 3) {
+                return suffix[0];
+            }
+            return suffix[num];
+        }
+        for (var i=0; i<fruits.length; i++) {
+            document.write(i+1 + getSuffix(i+1));
+            document.write(" choice is " + fruits[i] + ".<br>");
+        }
+        
+        // Exercise #5 -- bubble sort
+        var data = [10,7,0,3,2,-1];
+        function bubbleSort(data) {
+            var done;
+            do {
+                done = true;
+                for (var i=0; i<data.length-1; i++) {
+                    if (data[i] < data[i+1]) {
+                        var temp = data[i];
+                        data[i] = data[i+1];
+                        data[i+1] = temp;
+                        done = false;
+                    }
+                }
+            } while (!done);
+            return data;
+        }
+        document.write(bubbleSort(data) + "<br>");
+        
     </script>
 </head>
 </html>
